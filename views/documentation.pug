@@ -1,0 +1,52 @@
+extends layout
+
+block content
+  div.container.col-xl-8
+    div.row.mt-auto
+      span.headline About the data
+
+    div.row.blog_headline
+      div.col-auto.line
+      div.col.col_text
+        span.headline_sub What is the data about?
+    div.row.row_text.blog_text
+
+      span.text
+        | The data includes all Facebook posts with content that the social media platform considers political or concerning a social issue. The collection of posts goes back to the launch of the Facebook Ad Library API in March of 2019.
+        |
+        | Due to file size limitations, the provided file currently only includes the information that is necessary to analyze content and timing of a post (post text, included links, publish date etc.). 
+        |
+        |More detailed information about demographics (who saw the post?) and geographic distribution (where was the post seen?) can be provided on request for all available data sets. If you are interested in data for other countries, please let me know and I will try to include it on this page as soon as possible.
+    
+    div.row.blog_headline
+      div.col-auto.line
+      div.col.col_text
+        span.headline_sub Where does the data come from?
+    div.row.row_text.blog_text
+
+      span.text
+
+        |The data is sourced from Facebook's Ad Library API. The owner of this page does not claim any ownership of it. 
+        |
+        |For a detailed documentation of how Facebook collects, processes and stores the data, please visit the #[a(href="https://www.facebook.com/ads/library/api/?source=archive-landing-page&session_id=e10557ce-5f33-45f2-9827-8d48f8fee068", style="font-weight:bold") Facebook Ad Library API Documentation].
+
+    div.row.blog_headline
+      div.col-auto.line
+      div.col.col_text
+        span.headline_sub What format is the data provided in?
+    div.row.row_text.blog_text
+
+      span.text
+
+        |The data is provided as a simple file with comma separated values (csv). It can be easily opened for analysis in Excel or any basic text editor.
+
+    div.row.blog_headline
+      div.col-auto.line
+      div.col.col_text
+        span.headline_sub Has the data been changed at all?
+    div.row.row_text.blog_text
+
+      span.text
+
+        p.text-bold  No!
+        | The data has simply been transformed from the JSON format provided by the Facebook Ad library API to a plain .csv file in order to make it easier for non-developers to scrutinize its content. At no point has any of the data point values been changed or manipulated.

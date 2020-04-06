@@ -1,0 +1,33 @@
+
+extends layout 
+
+
+block content
+  div.container.col-xl-8
+    div.row.mt-auto
+      span.headline The Blog
+
+    div.row.blog_headline
+      div.col-auto.line
+      div.col.col_text
+        span.headline_sub 
+          a(href="/blog/article1") Hello World...
+    div.row.row_text.blog_text
+      span.text
+
+        | After months of writing my master thesis I am finally able to publish the project online and provide the gathered data for research. #[a.text-bold(href="/blog/article1") Read more...]
+
+
+    div.row.blog_headline
+      div.col-auto.line
+      div.col.col_text
+        span.headline_sub 
+          a(href="/blog/article2") The tech behind this page
+    div.row.row_text.blog_text
+      span.text
+         
+         | This post is for those of you who are interested in how this page was built, which technologies are used and where to start if you want to work on a similar project. #[a.text-bold(href="/blog/article2") Read more...]
+
+    
+
+

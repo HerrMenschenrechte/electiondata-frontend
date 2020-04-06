@@ -1,0 +1,291 @@
+body {
+  font-family: aileron, sans-serif;
+  font-size: 100%;
+  height: 100%;
+  padding-top: 100px;
+  background-image: url(../images/Circle_Right.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 15em;
+
+}
+
+.main-container {
+  min-height: 100%;
+  overflow: auto;
+  background-image: url(../images/Big_Magn_Glass_Left.svg);
+  background-position:
+    -10px top;
+  background-repeat: no-repeat;
+  background-size: 15em;
+  overflow: auto;
+  padding-bottom: 60px;
+}
+
+.navbar {
+  justify-content: center;
+}
+
+
+a {
+  color: #484747;
+  text-align: center;
+}
+
+a:hover {
+  color: #484747;
+
+}
+
+
+
+footer {
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  position: relative;
+  margin-top: -60px;
+  clear: both;
+  background-color: #f8f9fa !important;
+
+
+}
+
+.footer-container {
+  background-color: #f8f9fa !important;
+  align-items: center;
+  height: 100%;
+
+}
+
+.footer-column {
+  background-color: #f8f9fa !important;
+
+}
+
+.index-content {
+  margin-bottom: 50px;
+}
+
+.headline {
+  font: Normal 3em/1.5em aileron;
+  font-weight: bold;
+  color: #363636;
+}
+
+.headline_sub {
+  font: Normal 2em/1em aileron;
+  color: #363636;
+}
+
+.text {
+  font: normal 1.1em/1.1em aileron;
+  color: #363636;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.row {
+  margin: 0
+}
+
+.row_text {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.col_text {
+  padding-left: 0
+}
+
+.blog_headline {
+  margin-top: 50px;
+
+}
+
+.blog_text {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+
+
+.text_data {
+  text-align: center;
+  font: Bold 2em/1em aileron;
+  color: #484747;
+}
+
+.text_data_description {
+  text-align: center;
+  font: lighter 1.1em/2em aileron;
+  color: #484747;
+}
+
+.rectangle {
+  height: 220px;
+  box-shadow: 3px 6px 9px #00000029;
+  border-radius: 40px;
+  background-color: #F7F7F8;
+  align-items: center;
+  display: flex;
+}
+
+.centered_row {
+  justify-content: center;
+  display: flex;
+}
+
+.download_row {
+
+  width: 100%;
+  height: 400px;
+  background: transparent url("../images/Color Background.svg") 0% 0%;
+  align-items: center;
+  display: flex;
+}
+
+
+.interested {
+  margin-bottom: 30px;
+  color: #f7f7f8;
+  font-size: x-large;
+}
+
+.interested_pick {
+  margin-top: 30px;
+  color: #f7f7f8;
+  font-size: large;
+  font-weight: lighter;
+}
+
+.btn-primary {
+  box-shadow: 3px 6px 9px #00000029;
+  border-radius: 42px;
+  background-color: #f7f7f8;
+  border: none;
+  color: #363636;
+  width: 70%;
+}
+
+.line {
+  width: 5px;
+  background: transparent url("../images/Line1.svg") 0% 0% no-repeat padding-box;
+}
+
+.centered_dropdown {
+  display: flex;
+  justify-content: center;
+  border-radius: 1px;
+  border-color: #ffff;
+}
+
+
+
+@media (max-width: 480px) {
+  .centered_dropdown {
+    margin-bottom: 100px;
+  }
+}
+
+#dropdown1 {
+  background: transparent;
+  border: transparent;
+  align-items: center;
+  display: flex;
+  font-size: 1.25em;
+}
+
+.dropdown-menu {
+  background: transparent;
+  border: transparent;
+  color: #f7f7f8;
+}
+
+.dropdown-item {
+  color: #f7f7f8;
+}
+
+.consent-button {
+  color: #f7f7f8 !important;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#consentPopup {
+  height: 60px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #36EBBB !important;
+  color: white;
+  z-index: 150;
+  justify-content: center;
+}
+
+.accept {
+  font-weight: bold;
+  text-decoration: underline
+}
+
+.copyright {
+  text-align: center;
+}
+
+.tile {
+  margin-bottom: 20px;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+  box-shadow: 3px 6px 9px #00000029;
+}
+
+@media (max-width: 1400px) {
+  body {
+    background-image: none;
+
+  }
+
+  .main-container {
+    background-image: none;
+
+  }
+
+  #consentPopup {
+    height: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    background-image: none;
+  }
+
+  .main-container {
+    background-image: none;
+
+  }
+
+  .headline {
+    font: Normal 3em/1em aileron;
+    font-weight: bold;
+    margin-top: 60px;
+  }
+
+  .row_text {
+    margin-top: 20px !important;
+  }
+
+  #consentPopup {
+    height: 132px;
+  }
+}

@@ -1,0 +1,60 @@
+extends layout
+
+block content
+  div.container.col-xl-8
+    div.row.mt-auto
+      span.headline The tech behind this page
+
+    div.row.blog_headline
+      div.col-auto.line
+      div.col.col_text
+        span.headline_sub 13.04.2020
+    div.row.row_text.blog_text
+
+      img.responsive(src="/images/scrum.png" alt="Scrum")
+  
+      span.text
+
+        |
+        | For those of you who are interested in how this page was built from a technical perspective I have compiled a list of the underlying technologies. You can also check out the actual project code by going to my #[a(href="www.github.com/herrmenschenrechte").text-bold Github Page].
+        |
+        |
+      span.text
+          
+        | #[p.text-bold.text-normalwrap Tech-Stack:]
+        | #[p.text-bold.text-normalwrap - Programming Language: JavaScript]
+        | #[p.text-bold.text-normalwrap - Environment: NodeJS]
+        | #[p.text-bold.text-normalwrap - Framework: Express]
+        | #[p.text-bold.text-normalwrap - Database: MySQL]
+        |
+        | #[p.text-bold.text-normalwrap Azure Services:]
+        | #[p.text-bold.text-normalwrap - Azure App Service (Hosting Frontend & Backend)]
+        | #[p.text-bold.text-normalwrap - Azure Database for MySQL Server (Database)]
+        | #[p.text-bold.text-normalwrap - Azure Application Insights (Debugging & Web Tracking)]
+        | #[p.text-bold.text-normalwrap - Azure Storage Account / Blob Storage (Provisioning the Download)]
+        | #[p.text-bold.text-normalwrap - Data Factory (Exporting data for download)]
+        | #[p.text-bold.text-normalwrap - Azure DevOps: Project Management]
+        |
+        | #[p.text-bold.text-normalwrap Other Tech / Software:]
+        | #[p.text-bold.text-normalwrap - Adobe XD (Design/Mockup - Thanks Oana!)]
+        | #[p.text-bold.text-normalwrap - Apple Voice Memos (Recording of Plannning/Feedback Interviews)]
+        | #[p.text-bold.text-normalwrap - LATEX (Writing of the Thesis]
+        | #[p.text-bold.text-normalwrap - VS Code (IDE)]
+        | #[p.text-bold.text-normalwrap - Happyscribe (Transcription of Recordings)]
+        | #[p.text-bold.text-normalwrap - NVIVO (Structuring the Transcripts)]
+
+        
+
+
+
+
+      span.text
+        | 
+        | What do you think of this architecture? I am always interested to learn and open for improvements, so let me know if you think the setup can be more efficient or if you would use other services to perform the same tasks ✌🏾
+        |
+        | One thing I already noticed during the development process is that JavaScript / Node was not the ideal environment for the backend code because of its downsides with regard to processing longer running operations and async / await. 
+        |Figuring out a sequence of functions that was able to query the Facebook API, page through at times hundreds of pages, handle the frequent bugs or faulty responses and finally push the data into my database efficiently could have probably been easier achieved in e.g. Python.
+        | If you want to check out the code in more detail, fell free to head over to my github page and browse to the two separate projects for backend and frontend/website
+        |
+        |#[a(href="www.google.de").text-bold Github: Backend Code]
+        |#[a(href="https://github.com/HerrMenschenrechte/electiondata-frontend").text-bold Github: Frontend Code]

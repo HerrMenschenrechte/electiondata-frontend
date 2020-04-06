@@ -1,0 +1,82 @@
+extends layout
+
+ 
+
+block content
+  div.container.col-xl-8.index-content
+    div.row
+      span.headline 
+        |Political Ad Transparency <br>
+        |on Facebook for Everyone
+
+    div.row.row_text
+      div.col-auto.line
+      div.col
+        span.text
+          | Facebook is one of the major advertising platforms of our time and many politicians, parties, NGOs and action groups pay to promote their ideas and programs on the platform. 
+          |
+          |The goal of this page is to use official Facebook data on paid advertising posts to provide more transparency for researchers, journalists and curious citizens about which political actors are paying for content on the platform.
+    
+    div.row.row_text
+      div.col-auto.line
+      div.col
+        span.text
+          | Use the download button below to access all available data points for a selected country.
+          | For an overview of the specific available data points visit the documentation page or the #[a(href="https://www.facebook.com/ads/library/api/?source=archive-landing-page&session_id=e10557ce-5f33-45f2-9827-8d48f8fee068", style="font-weight:bold") Facebook Ad Library API Documentation]. 
+          | 
+          |All data is queried from the official Facebook Ad Library API and the owner of this page does in no way claim ownership of it.
+                
+    .row
+      div.col-md-4.tile
+        div.rectangle
+          div.col
+            .row.centered_row
+              img(src="images/Location icon.png")
+            .row.centered_row
+              span.text_data(id="location") Loading...
+            .row.centered_row
+              span.text_data_description available countries
+      
+      div.col-md-4.tile
+        div.rectangle
+          div.col
+            .row.centered_row
+              img(src="images/Posts icon.png")
+            .row.centered_row
+              span.text_data(id="posts") Loading...
+            .row.centered_row
+              span.text_data_description Posts in the database
+
+      div.col-md-4.tile 
+        div.rectangle
+          div.col
+            .row.centered_row
+              img(src="images/Update icon.png")
+            .row.centered_row
+              span.text_data(id="update") Loading...
+            .row.centered_row
+              span.text_data_description Latest data update
+
+  div.download_row
+      div.container
+        div.col
+          .row.centered_row
+            span.interested Interested in the Data?
+          .row.centered_row
+            .col-md-6.centered_dropdown
+              btn.btn-secondary.dropdown-toggle(type="button" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Pick a country  
+                div.dropdown-menu(aria-labelledby="dropdown1")
+                  a.dropdown-item(href="", id="germany") Germany
+                  a.dropdown-item(href="", id="denmark") Denmark
+            div.col-md-6.centered_row
+              btn.btn.btn-primary.btn-lg.btn-block 
+                a(href="" id="country") Download
+              
+          .row.centered_row
+            span.interested_pick *Pick a dataset from the dropdown
+
+
+  script(src="/javascripts/downloads.js")
+  script(defer src="/javascripts/dom.js")
+          
+        
