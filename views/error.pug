@@ -1,6 +1,14 @@
 extends layout
 
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+   div.container.col-xl-8
+    div.row.mt-auto
+      span.headline 404 Page not found...
+
+    div.row.blog_headline
+      div.col-auto.line
+      div.col.col_text
+        span.headline_sub ... This page does not exist, but you can always go back or visit another one
+    div.row.row_text.blog_text
+
+      span.text

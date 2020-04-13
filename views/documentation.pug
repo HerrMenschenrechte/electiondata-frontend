@@ -21,6 +21,28 @@ block content
     div.row.blog_headline
       div.col-auto.line
       div.col.col_text
+        span.headline_sub How can the data be accessed and analyzed?
+    div.row.row_text.blog_textS
+
+      span.text
+        | In order to access and analyze the data, download it from the #[a(href="https://www.politicaladtransparency.com", style="font-weight:bold") home page].
+        |
+        | For a quick first analysis of the data, use Excel to open the downloaded .csv file in the following way:
+        |
+        |
+        ol
+          li Open a new empty Excel worksheet 
+          li Click on data, then Get External Data and then "Import Text File"
+          li Choose the downloaded file from where you store your downloads
+          li In the Text Import Wizard, choose the "Delimited" data type and "File Origin" UTF-8
+          li Click on "Next", then choose "Semicolon" as the Delimiter
+          li Click "Finish" and let Excel read in the file. This might take a while depending on your system but once completed you will be able to scrutinize the data.
+  
+        | Another alternative to analyze the data is by reading it into a Python Panda's Notebook or using it as a data source for i.e. Power BI or any other common business intelligence tool.
+        
+    div.row.blog_headline
+      div.col-auto.line
+      div.col.col_text
         span.headline_sub Where does the data come from?
     div.row.row_text.blog_text
 
