@@ -14,6 +14,20 @@ document.getElementById("denmark").onclick = function () {
 
 }
 
+document.getElementById("france").onclick = function () {
+    document.getElementById("country").href = "https://facebookdata.blob.core.windows.net/thesisdata/france_posts.csv"
+    document.getElementById("country").textContent = "Download France"
+    appInsights.trackEvent({ name: "Download - France" });
+
+}
+
+document.getElementById("uk").onclick = function () {
+    document.getElementById("country").href = "https://facebookdata.blob.core.windows.net/thesisdata/uk_posts.csv"
+    document.getElementById("country").textContent = "Download United Kingdom"
+    appInsights.trackEvent({ name: "Download - United Kingdom" });
+
+}
+
 document.getElementById("country").onclick = function () {
     appInsights.trackEvent({ name: "Download - total" })
 }
