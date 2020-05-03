@@ -163,6 +163,7 @@ footer {
   color: #f7f7f8;
   font-size: large;
   font-weight: lighter;
+  text-align: center;
 }
 
 .btn-primary {
@@ -190,7 +191,7 @@ footer {
 
 @media (max-width: 480px) {
   .centered_dropdown {
-    margin-bottom: 100px;
+    margin-bottom: 120px;
   }
 }
 
@@ -200,12 +201,18 @@ footer {
   align-items: center;
   display: flex;
   font-size: 1.25em;
+  overflow: auto;
 }
 
 .dropdown-menu {
   background: transparent;
   border: transparent;
   color: #f7f7f8;
+}
+
+.dropdown-menu.show {
+  overflow-y: scroll;
+  max-height: 100px;
 }
 
 .dropdown-item {
