@@ -12,7 +12,7 @@ $.ajax({
         })
 
         $(document).ready(function () {
-            document.getElementById('location').innerHTML = 4
+            document.getElementById('location').innerHTML = 6
         })
 
         $(document).ready(function () {
