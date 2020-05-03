@@ -28,6 +28,20 @@ document.getElementById("uk").onclick = function () {
 
 }
 
+document.getElementById("hungary").onclick = function () {
+    document.getElementById("country").href = "https://facebookdata.blob.core.windows.net/thesisdata/hungary_posts.csv"
+    document.getElementById("country").textContent = "Download Hungary"
+    appInsights.trackEvent({ name: "Download - Hungary" });
+
+}
+
+document.getElementById("slovakia").onclick = function () {
+    document.getElementById("country").href = "https://facebookdata.blob.core.windows.net/thesisdata/slovakia_posts.csv"
+    document.getElementById("country").textContent = "Download Slovakia"
+    appInsights.trackEvent({ name: "Download - Slovakia" });
+
+}
+
 document.getElementById("country").onclick = function () {
     appInsights.trackEvent({ name: "Download - total" })
 }
