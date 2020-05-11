@@ -222,15 +222,19 @@ footer {
   text-decoration: underline;
 }
 
+.consent_row {
+  margin: auto;
+}
+
 #consentPopup {
-  height: 60px;
+  height: 80px;
   position: fixed;
   left: 0;
   right: 0;
   background-color: #36EBBB !important;
   color: white;
   z-index: 150;
-  justify-content: center;
+  text-align: center;
 }
 
 .accept {
