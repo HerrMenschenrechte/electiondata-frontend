@@ -7,6 +7,13 @@ document.getElementById("germany").onclick = function () {
 
 }
 
+document.getElementById("australia").onclick = function () {
+    document.getElementById("country").href = "https://facebookdata.blob.core.windows.net/thesisdata/australia_posts.csv"
+    document.getElementById("country").textContent = "Download Australia"
+    appInsights.trackEvent({ name: "Download - Australia" });
+
+}
+
 document.getElementById("denmark").onclick = function () {
     document.getElementById("country").href = "https://facebookdata.blob.core.windows.net/thesisdata/denmark_posts.csv"
     document.getElementById("country").textContent = "Download Denmark"
