@@ -49,6 +49,13 @@ document.getElementById("slovakia").onclick = function () {
 
 }
 
+document.getElementById("india").onclick = function () {
+    document.getElementById("country").href = "https://facebookdata.blob.core.windows.net/thesisdata/india_posts.csv"
+    document.getElementById("country").textContent = "Download India"
+    appInsights.trackEvent({ name: "Download - India" });
+
+}
+
 document.getElementById("country").onclick = function () {
     appInsights.trackEvent({ name: "Download - total" })
 }

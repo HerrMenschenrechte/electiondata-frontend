@@ -15,7 +15,6 @@ window.onpageshow = function () {
 
     if (localStorage.getItem('cookieConsent') !== 'yes' || undefined) {
 
-        console.log("test")
         document.getElementById("consentPopup").style = "justify-content: center"
 
         document.getElementById("consentButton").onclick = function () {
