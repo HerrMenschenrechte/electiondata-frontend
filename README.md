@@ -1,6 +1,6 @@
 # Ad Transparency on Facebook for everyone
 
-This website offers a download of data queried from the Facebook Ad Library. The data includes all Facebook posts with political and socially relevant content for the provided countries since the launch of the library in March 2019. Starting with Denmark and Germany, countries will be added on a rolling basis. Requests for specific countries can be submitted to info@politicaladtransparency.com.
+The website [politicaladtransparency.com](https://www.politicaladtransparency.com) offers a download of data queried from the Facebook Ad Library. The data includes all Facebook posts with political and socially relevant content for the provided countries since the launch of the library in March 2019. Starting with Denmark and Germany, countries will be added on a rolling basis. Requests for specific countries can be submitted to info@politicaladtransparency.com.
 
 ## Tech Stack
 
