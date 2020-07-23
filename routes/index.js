@@ -49,6 +49,10 @@ router.get('/robots.txt', function (req, res) {
 
 });
 
+router.get('/robots933456.txt', function (req, res) {
+  res.send('error', 404)
+})
+
 
 
 
