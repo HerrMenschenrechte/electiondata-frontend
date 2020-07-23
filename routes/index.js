@@ -43,6 +43,11 @@ router.get('/cookies', async function (req, res, next) {
 
 });
 
+router.get('/robots.txt', async function (req, res, next) {
+  res.sendFile('/robots.txt');
+
+});
+
 
 
 
