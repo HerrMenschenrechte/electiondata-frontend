@@ -56,6 +56,14 @@ document.getElementById("india").onclick = function () {
 
 }
 
+
+document.getElementById("usa").onclick = function () {
+    document.getElementById("country").href = "https://facebookdata.blob.core.windows.net/thesisdata/usa_posts.csv"
+    document.getElementById("country").textContent = "Download USA"
+    appInsights.trackEvent({ name: "Download - USA" });
+
+}
+
 document.getElementById("country").onclick = function () {
     appInsights.trackEvent({ name: "Download - total" })
 }
