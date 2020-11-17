@@ -6,7 +6,6 @@ const logger = require('morgan');
 const compression = require('compression')
 
 const indexRouter = require('./routes/index');
-const dataRouter = require('./routes/data');
 const blogRouter = require('./routes/blog')
 
 const app = express();
@@ -25,7 +24,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/', indexRouter);
-app.use('/data', dataRouter);
 app.use('/blog', blogRouter);
 
 // catch 404 and forward to error handler
