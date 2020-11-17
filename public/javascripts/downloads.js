@@ -64,6 +64,27 @@ document.getElementById("usa").onclick = function () {
 
 }
 
+document.getElementById("sweden").onclick = function () {
+    document.getElementById("country").href = "https://facebookdata.blob.core.windows.net/thesisdata/sweden_posts.csv"
+    document.getElementById("country").textContent = "Download Sweden"
+    appInsights.trackEvent({ name: "Download - Sweden" });
+
+}
+
+document.getElementById("finland").onclick = function () {
+    document.getElementById("country").href = "https://facebookdata.blob.core.windows.net/thesisdata/finland_posts.csv"
+    document.getElementById("country").textContent = "Download Finland"
+    appInsights.trackEvent({ name: "Download - Finland" });
+
+}
+
+document.getElementById("norway").onclick = function () {
+    document.getElementById("country").href = "https://facebookdata.blob.core.windows.net/thesisdata/norway_posts.csv"
+    document.getElementById("country").textContent = "Download Norway"
+    appInsights.trackEvent({ name: "Download - Norway" });
+
+}
+
 document.getElementById("country").onclick = function () {
     appInsights.trackEvent({ name: "Download - total" })
 }
